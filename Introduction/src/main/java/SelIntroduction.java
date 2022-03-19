@@ -6,6 +6,7 @@ public class SelIntroduction {
         // Invoke Browser
         System.setProperty("webdriver.chrome.driver","/opt/homebrew/bin/chromedriver");
         WebDriver driver = new ChromeDriver();
+        // Tell selenium to perform actions
         driver.get("https://forrestbear.org");
         System.out.println(driver.getTitle());
         System.out.println(driver.getCurrentUrl());
